@@ -1,11 +1,32 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Título da Página</title>
+    <title>Proteção de Texto</title>
+    <style>
+        body {
+            user-select: none; /* Para navegadores modernos */
+            -moz-user-select: none; /* Para Firefox */
+            -webkit-user-select: none; /* Para Safari */
+            -ms-user-select: none; /* Para Internet Explorer/Edge */
+        }
+    </style>
+    <script>
+        document.addEventListener("contextmenu", function(e) {
+            e.preventDefault();
+        });
+        document.addEventListener("copy", function(e) {
+            e.preventDefault();
+            alert("Cópia de texto não permitida!");
+        });
+        document.addEventListener("paste", function(e) {
+            e.preventDefault();
+        });
+    </script>
 </head>
 <body>
-xalala
+    <h1>Texto Protegido</h1>
+    <p>Este texto não pode ser copiado.</p>
 </body>
 </html>
