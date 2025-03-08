@@ -1,0 +1,26 @@
+body {
+    display: flex; /* Usar flexbox para layout */
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo da barra lateral */
+.sidebar {
+    width: 250px; /* Largura da barra lateral */
+    background-color: #f4f4f4; /* Cor de fundo */
+    padding: 20px; /* Espaçamento interno */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+/* Estilo da área de conteúdo */
+.content {
+    flex: 1; /* Ocupa o restante do espaço */
+    padding: 20px; /* Espaçamento interno */
+    overflow-y: auto; /* Permite rolagem vertical */
+    height: 100vh; /* Altura total da janela */
+}
+
+/* Estilo dos itens da barra lateral */
+.sidebar p {
+    margin: 10px 0; /* Margem entre os textos */
+}

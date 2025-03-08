@@ -3,31 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proteção de Texto</title>
-    <style>
-        body {
-            user-select: none; /* Para navegadores modernos */
-            -moz-user-select: none; /* Para Firefox */
-            -webkit-user-select: none; /* Para Safari */
-            -ms-user-select: none; /* Para Internet Explorer/Edge */
-        }
-    </style>
-    <script>
-        document.addEventListener("contextmenu", function(e) {
-            e.preventDefault();
-        });
-        document.addEventListener("copy", function(e) {
-            e.preventDefault();
-            alert("Cópia de texto não permitida!");
-        });
-        document.addEventListener("paste", function(e) {
-            e.preventDefault();
-        });
-    </script>
+    <title>Layout com Barra Lateral</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Vinculando o arquivo CSS -->
 </head>
 <body>
-    <a href="index.html" class="botao">Ir para Outra Página</a>
-    <h1>xalala</h1>
-    <p>Este texto não pode ser copiado.</p>
+    <div class="sidebar">
+        <h2>Barra Lateral</h2>
+        <a href="index.html" class="botao">Ir para Outra Página</a>
+        <p>Item 1</p>
+        <p>Item 2</p>
+        <p>Item 3</p>
+        <p>Item 4</p>
+        <p>Item 5</p>
+        <p>Item 6</p>
+        <p>Item 7</p>
+        <p>Item 8</p>
+        <p>Item 9</p>
+        <p>Item 10</p>
+    </div>
+    <div class="content">
+        <h2>Conteúdo Principal</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
 </body>
 </html>
